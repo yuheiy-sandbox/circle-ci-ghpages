@@ -1,0 +1,25 @@
+{
+  "name": "deploy-to-ghpages-by-circle-ci",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node scripts/build.js",
+    "deploy": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuheiy-sandbox/circle-ci-ghpages.git"
+  },
+  "keywords": [],
+  "author": "Yuhei Yasuda <yuhei.yasuda1003@gmail.com> (https://yhey.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuheiy-sandbox/circle-ci-ghpages/issues"
+  },
+  "homepage": "https://github.com/yuheiy-sandbox/circle-ci-ghpages#readme",
+  "devDependencies": {
+    "fs-extra": "^0.26.7"
+  }
+}
