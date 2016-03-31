@@ -11,6 +11,14 @@ test:
   override:
     - npm run test
     - npm run build
+deployment:
+  master:
+    branch: master
+    commands:
+      - git clone git@github.com:yuheiy-sandbox/circle-ci-ghpages.git dist
+      - npm run build
+      - cd dist && git add --add && git commit -m "build"
+      - cd dist && git push origin gh-pages
 general:
   branches:
     ignore:
