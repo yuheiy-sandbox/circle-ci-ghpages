@@ -1,3 +1,7 @@
+general:
+  branches:
+    ignore:
+      - gh-pages
 machine:
   timezone: Asia/Tokyo
   node:
@@ -18,9 +22,7 @@ deployment:
       - rm -rf dist
       - git clone -b gh-pages git@github.com:yuheiy-sandbox/circle-ci-ghpages.git dist
       - npm run build
+      - git config --global user.name "Yuhei Yasuda"
+      - git config --global user.email "yuhei.yasuda1003@gmail.com"
       - cd dist && git add --all && git commit -m "build"
       - cd dist && git push origin gh-pages
-general:
-  branches:
-    ignore:
-      - gh-pages # list of branches to ignore
